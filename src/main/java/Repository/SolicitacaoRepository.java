@@ -4,7 +4,7 @@ import Model.Solicitacao;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SolicitacaoRepository {
+public class SolicitacaoRepository implements ISolicitacaoRepository {
     private final Map<String, Solicitacao> bancoDeDados = new HashMap<>();
 
     public void salvar(Solicitacao s) {
